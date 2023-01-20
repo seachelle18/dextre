@@ -1,4 +1,4 @@
 <?php
-include "\inc\header.php";
+include "header.php";
 
 ?>
