@@ -19,3 +19,4 @@
         </ul>
     </div>
 </header>
+<?php session_start(); ?>
