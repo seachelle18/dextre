@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+  <div class="categories-buttons">
+  </div>
+  <p class="label">Time Remaining Until Next Event: </p>
+  <div class="InfoBox"></div>
+
+
+  <br>
+  <p class="label">Scenario: </p>
+  <p class="scenario"></p>
+
+  <div class="interactive-box">
+    <div class="option">
+      <p class="option-text">Option 1: </p>
+      <p class="option_1"> </p>
+      <p class="option-text">Option 2: </p>
+      <p class="option_2"> </p>
+    </div>
+    <button class="option-button" id="o1">Option 1</button>
+    <button class="option-button" id="o2">Option 2</button>
+  </div>
+  </div>
+  <script src="script.js"></script>
+  <script type="text/javascript"></script>
+  <div class="progbar" id="bar1"></div>
+  <div class="progbar" id="bar2"></div>
+  <div class="progbar" id="bar3"></div>
+  <div class="progbar" id="bar4"></div>
+  <div class="progbar" id="bar5"></div>
+
+  <script>
+    loadButtons();
+    gameLoop();
+
+  </script>
+
+
+</body>
+
+</html>
