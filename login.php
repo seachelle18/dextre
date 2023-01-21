@@ -1,6 +1,25 @@
 <?php
 
+session_start();
+$servername = 'localhost';
+$database = 'quiz';
+$usrnm = 'root';
+$password = 'annyeong471';
+
+// Create connection
+
+$conn = mysqli_connect($servername, $usrnm, $password, $database);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
 if(isset($_POST['submit'])){
+    $eml = $_POST['email'];
+    $pwd = $_POST['pass'];
+    $insert = "INSERT INTO user values ('$eml', '$pwd')";
+    $ins = $conn->query($insert);
+    $_SESSION['username'] = $_POST['email'];
     header('location:quiz.php');
 }
 

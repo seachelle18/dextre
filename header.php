@@ -14,8 +14,9 @@
             BC Learning Game
         </h1>
         <ul>
-            <li>Home</li>
+            <li><a href="quiz.php">Home</a></li>
             <li>About</li>
+            <li><a href="stats.php">Stats</a></li>
         </ul>
     </div>
 </header>
