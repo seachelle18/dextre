@@ -1,0 +1,57 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  font-family: Courier; 
+}
+
+.gameSquare {
+  width:5%;
+}
+
+.water {
+  background-image: url('Pic/Water.png');
+  background-size: contain;  
+}
+
+.forrest {
+  background-image: url('Pic/Tree.png');
+  background-size: contain;
+}
+
+.gameSquare:after {
+  content: "";
+  display: block;
+  padding-bottom: 97%;
+  border: none;
+  background-position: center;
+}
+
+.inDisaster{
+  background-image: none;
+/*   hue-rotate(90deg); */
+  background-color: red;
+}
+
+.progbar {
+  color: green;
+}
+
+.option-text {
+  font-family: Courier;
+}
+
+.interactive-box {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  background-color: #0B4E2B;
+  color: white;
+  padding: 20px;
+}
+
+.label {
+  font-weight: bold;
+}
